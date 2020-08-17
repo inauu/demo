@@ -1,0 +1,100 @@
+header{
+    background-color: $background-black;
+    min-height: 100px;
+    line-height: 100px;
+    .header__nav{
+       
+        color: white;
+        @include rs-xs{
+            padding-right: 0px;
+        }
+        @include rs-md{
+            padding-right: 40px;
+        }
+        &--logo{
+            width: 100px;
+            background-color: white;
+            color: $main-color;
+            text-align: center;
+            font-size: 36px;
+        }
+        &--timing{
+            @include rs-xs{
+                padding-left:10px ;
+            }
+            @include rs-md{
+                padding-left:40px ;
+            }
+            &--clock{
+                display: block;
+                margin-right: 5px;
+            }
+            &--tick{
+                font-size: 20px;
+            }
+        }
+        &--process{
+           
+            @include rs-xs{
+                width: 100%;
+                order: 1;
+            }
+
+            @include rs-md{
+                flex: 1;
+                order: unset;
+            }
+            &--bar{
+                display: block;
+                margin-right: 5px;
+                width: 150px;
+                height: 20px;
+                border-radius: 999px;
+                border: 2px solid #fff;
+                position: relative;
+                z-index: 1;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    background-color: $process-color;
+                    width: 20px;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    border-top-left-radius: 999px;
+                    border-bottom-left-radius: 999px;
+                    z-index: -1;
+                }
+                &--done{
+                    position: absolute;
+                    background-color: $process-color;
+                    width: 0;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    z-index: -1;
+                    border-top-left-radius: 999px;
+                    border-bottom-left-radius: 999px;
+                }
+            }
+            &--info{
+                font-size: 20px;
+            }
+        }
+        &--user-login{
+            @include rs-xs{
+                padding-right: 10px;
+            }
+            @include rs-md{
+                padding-right: 0px;
+            }
+            &--icon{
+                display: block;
+                margin-right: 5px;
+            }
+            &--mail{
+
+            }
+        }
+    }
+}

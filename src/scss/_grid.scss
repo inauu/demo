@@ -5,15 +5,7 @@ $gutter: 10px; // khoảng cách giữa cách col
   display: flex;
   flex-wrap: wrap;
 
-  //xóa khoảng cách đầu + cuối: (có thể xóa)
-  margin-left: -$gutter/2;
-  margin-right: -$gutter/2;
-
-  //tạo khoảng cách giữa các cột: (có thể xóa)
-  div[class^="col-"] {
-    padding: $gutter/2;
-  }
-
+ 
   @include rs-xs {
     @for $i from 1 through $col {
       .col-xs-#{$i} {

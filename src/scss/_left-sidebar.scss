@@ -1,0 +1,50 @@
+.main__content--left-sidebar{
+    width: 100px;
+    min-height: calc(100vh - 100px);
+    flex-direction: column;
+    align-content: center;
+    background-color: $background-black;
+    color: white;
+   
+    &--bars{
+        padding: 15px 0;
+        text-align: center;
+        cursor: pointer;
+       i{
+
+            font-size: 25px;
+       }
+    }  
+    &--bars.active{
+        background-color: white;
+        color: #333;
+    }
+    &--list{
+        list-style: none;
+        width: 100%;
+        &--item{
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            cursor: pointer;
+            span{
+                margin: 0 auto;
+                display: block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 100%;
+                border: 1px solid #fff;
+                text-align: center;
+                font-size: 21px;
+                font-weight: 500;
+            }
+        }
+        &--item.active{
+            background-color: white;
+            span{
+                background-color: $main-color;
+            }
+        }
+    }
+}

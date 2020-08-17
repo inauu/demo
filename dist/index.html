@@ -1,15 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="./dist/css/style.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <title>Fe-Template</title>
-  </head>
-  <body>
-    <h1>Welcome</h1>
-  </body>
-  <script src="./dist/js/main.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- <div class="container"> -->
+        <div class="header__nav flex a-center j-between">
+            <div class="header__nav--logo">
+                J
+            </div>
+            <div class="header__nav--timing flex a-center">
+                <i class="header__nav--timing--clock far fa-clock"></i>
+                <div class="header__nav--timing--tick">
+                    05:29
+                </div>
+            </div>
+            <div class="header__nav--process flex a-center j-center">
+                <div class="header__nav--process--bar">
+                    <div class="header__nav--process--bar--done"></div>
+                </div>
+                <div class="header__nav--process--info">
+                    0/2 Attempts
+                </div>
+            </div>
+            <div class="header__nav--user-login flex a-center">
+                <div class="header__nav--user-login--icon">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="header__nav--user-login--mail">
+                    email@example.com
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </header>
+    <!-- END HEADER -->
+
+
+    <!-- MAIN -->
+    <main>
+        <div class="container">
+            <div class="main__content flex">
+                <div class="main__content--left-sidebar flex ">
+                    <div class="main__content--left-sidebar--bars active" value="all">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="main__content--left-sidebar--list flex">
+                        <li class="main__content--left-sidebar--list--item " value="q-1">
+                            <span>1</span>
+                        </li>
+                        <li class="main__content--left-sidebar--list--item" value="q-2">
+                            <span>2</span>
+                        </li>
+                        <li class="main__content--left-sidebar--list--item" value="q-3">
+                            <span>3</span>
+                        </li>
+                        <li class="main__content--left-sidebar--list--item" value="q-4">
+                            <span>4</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main__content--right">
+                    <div class="main__content--right--questions">
+                        <div class="main__content--right--questions--title row">
+                            <div class="col-xs-6">
+                                Questions
+                            </div>
+                            <div class="col-xs-2">
+                                Type
+                            </div>
+                            <div class="col-xs-2">
+                                Status
+                            </div>
+                            <div class="col-xs-2">
+
+                            </div>
+                            <div class="line col-xs-12"></div>
+                        </div>
+                        <ul class="main__content--right--questions--list">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- END MAIN -->
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+
 </html>
